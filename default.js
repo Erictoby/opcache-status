@@ -34,30 +34,34 @@ function set_text(t)
 {
 	if (t === "memory")
 	{
-		d3.select("#stats").html("<table><tr><th style='background:#d03a3a;color:#fff;'>Used</th><td><?php echo $dataModel->getHumanUsedMemory()?></td></tr>"+
-								 "<tr><th style='background:#6FB437;color:#fff;'>Free</th><td><?php echo $dataModel->getHumanFreeMemory()?></td></tr>"+
-								 "<tr><th style='background:#ff7f0e;color:#fff' rowspan=\"2\">Wasted</th><td><?php echo $dataModel->getHumanWastedMemory()?></td></tr>"+
-								 "<tr><td><?php echo $dataModel->getWastedMemoryPercentage()?>%</td></tr></table>"
-								 );
+		d3.select("#stats").html(
+			"<table><tr><th style='background:#d03a3a;color:#fff;'>Used</th><td><?php echo $dataModel->getHumanUsedMemory()?></td></tr>"+
+			"<tr><th style='background:#6FB437;color:#fff;'>Free</th><td><?php echo $dataModel->getHumanFreeMemory()?></td></tr>"+
+			"<tr><th style='background:#ff7f0e;color:#fff' rowspan=\"2\">Wasted</th><td><?php echo $dataModel->getHumanWastedMemory()?></td></tr>"+
+			"<tr><td><?php echo $dataModel->getWastedMemoryPercentage()?>%</td></tr></table>"
+			);
 	}
 	else if (t === "keys")
 	{
-		d3.select("#stats").html("<table><tr><th style='background:#d03a3a;color:#fff'>Cached keys</th><td>"+format_value(dataset[t][0])+"</td></tr>"+
-								 "<tr><th style='background:#6FB437;color:#fff'>Free Keys</th><td>"+format_value(dataset[t][1])+"</td></tr></table>"
-								 );
+		d3.select("#stats").html(
+			"<table><tr><th style='background:#d03a3a;color:#fff'>Cached keys</th><td>"+format_value(dataset[t][0])+"</td></tr>"+
+			"<tr><th style='background:#6FB437;color:#fff'>Free Keys</th><td>"+format_value(dataset[t][1])+"</td></tr></table>"
+			);
 	}
 	else if (t === "hits")
 	{
-		d3.select("#stats").html("<table><tr><th style='background:#d03a3a;color:#fff'>Misses</th><td>"+format_value(dataset[t][0])+"</td></tr>"+
-								 "<tr><th style='background:#6FB437;color:#fff'>Cache Hits</th><td>"+format_value(dataset[t][1])+"</td></tr></table>"
-								 );
+		d3.select("#stats").html(
+			"<table><tr><th style='background:#d03a3a;color:#fff'>Misses</th><td>"+format_value(dataset[t][0])+"</td></tr>"+
+			"<tr><th style='background:#6FB437;color:#fff'>Cache Hits</th><td>"+format_value(dataset[t][1])+"</td></tr></table>"
+			);
 	}
 	else if (t === "restarts")
 	{
-		d3.select("#stats").html("<table><tr><th style='background:#d03a3a;color:#fff'>Memory</th><td>"+dataset[t][0]+"</td></tr>"+
-								 "<tr><th style='background:#6FB437;color:#fff'>Manual</th><td>"+dataset[t][1]+"</td></tr>"+
-								 "<tr><th style='background:#ff7f0e;color:#fff'>Keys</th><td>"+dataset[t][2]+"</td></tr></table>"
-								 );
+		d3.select("#stats").html(
+			"<table><tr><th style='background:#d03a3a;color:#fff'>Memory</th><td>"+dataset[t][0]+"</td></tr>"+
+			"<tr><th style='background:#6FB437;color:#fff'>Manual</th><td>"+dataset[t][1]+"</td></tr>"+
+			"<tr><th style='background:#ff7f0e;color:#fff'>Keys</th><td>"+dataset[t][2]+"</td></tr></table>"
+			);
 	}
 }
 

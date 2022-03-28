@@ -378,7 +378,7 @@ if (isset($_GET['clear']) && $_GET['clear'] == 1)
 <div id="container">
 	<h1><?php echo $dataModel->getPageTitle(); ?></h1>
 
-	<div class="actions">
+	<div class="button">
 		<a href="?clear=1">Clear cache</a>
 	</div>
 

@@ -7,11 +7,24 @@ body {
 #container {
 	width: 1024px;
 	margin: auto;
-	position: relative;
+	*position: relative;
 }
 
 h1 {
 	padding: 10px 0;
+	float:left;
+}
+
+.button {
+	padding: 10px;
+	margin-top:20px;
+	float:right;
+	border: 1px solid #dfdfdf;
+	background-color: #f4f4f4;
+}
+.button a {
+	text-decoration: none;
+	color: #55a;
 }
 
 table {
@@ -27,6 +40,7 @@ p.capitalize {
 }
 
 .tabs {
+	margin-top:20px;
 	position: relative;
 	float: left;
 	width: 60%;
@@ -91,9 +105,10 @@ p.capitalize {
 }
 
 #graph {
-	float: right;
-	width: 40%;
 	position: relative;
+	margin-top:28px;
+	width: 40%;
+	float: right;
 }
 
 #graph > form {
@@ -163,15 +178,4 @@ p.capitalize {
 
 label {
 	cursor: pointer;
-}
-
-.actions {
-	margin-bottom: 30px;
-	padding: 10px;
-	border: 1px solid #dfdfdf;
-	text-align: left;
-}
-.actions a {
-	text-decoration: none;
-	color: #55a;
 }
