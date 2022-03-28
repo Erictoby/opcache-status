@@ -1,7 +1,7 @@
-OPcache Status  [![Packagist](http://img.shields.io/packagist/v/rlerdorf/opcache-status.svg)](https://packagist.org/packages/rlerdorf/opcache-status)
+OPcache Status  [![Packagist](http://img.shields.io/packagist/v/Erictoby/opcache-status.svg)](https://packagist.org/packages/Erictoby/opcache-status)
 ---------------
 
-A one-page opcache status page for the PHP 5.5 opcode cache.
+A one-page opcache status page for the PHP 7 & 8 opcode cache.
 
 You don't need the opcode cache installed to help out with this.
 See the data-sample.php file for a dump of the data.
@@ -11,7 +11,7 @@ to keep it relatively small and to a single file so it is easy to
 drop into a directory anywhere without worrying about separate css/js/php
 files.
 
-[![Screenshot](https://raw.githubusercontent.com/jamesrwhite/opcache-status/improve-readme/screenshot.png)](https://raw.githubusercontent.com/jamesrwhite/opcache-status/improve-readme/screenshot.png)
+[![Screenshot](https://github.com/Erictoby/opcache-status/blob/master/screenshot.png)](https://github.com/Erictoby/opcache-status/blob/master/screenshot.png)
 
 ### TODO
 
