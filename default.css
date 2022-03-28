@@ -149,12 +149,12 @@ p.capitalize {
 #partition rect {
 	stroke: #fff;
 	fill: #aaa;
-	fill-opacity: 1;
+	fill-opacity: 1.0;
 }
 
 #partition rect.parent {
 	cursor: pointer;
-	fill: steelblue;
+	fill: #80b090;
 }
 
 #partition text {

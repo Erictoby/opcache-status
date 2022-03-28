@@ -350,7 +350,7 @@ if (isset($_GET['clear']) && $_GET['clear'] == 1)
 <meta charset="utf-8">
 <html>
 <head>
-	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="default.css?<?php echo date("YmdHis")?>">
 	<script src="inc/d3-3.0.1.min.js"></script>
 	<script src="inc/jquery-1.11.0.min.js"></script>
 	<script>
